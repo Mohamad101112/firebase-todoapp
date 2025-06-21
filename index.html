@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Notesy</title>
+</head>
+<body>
+
+
+    <nav class="t">
+        <div class="logo">{NOTESY}</div>
+        <div class="navLoad loader"></div>
+        <div class="btns">
+            <button class="login hide">
+                Login / Signup
+            </button>
+            
+        </div>
+        
+        <div class="loggedIn">
+            <div class="user">
+                
+            </div>
+            <button class="logout hide">
+                Logout
+            </button>
+
+        </div>
+        
+    </nav>
+
+
+
+    <div class="modal hide">
+ <div class="backdrop"></div>
+        <div class="login-box ">
+            <h2 class="lr">Register</h2>
+            <div class="msg"></div>
+            <form id="login-form">
+              <label for="email">Email</label>
+              <input type="email" id="email" placeholder="you@example.com" required />
+        
+              <label for="password">Password</label>
+              <input type="password" id="password" placeholder="••••••••" required />
+        
+              <button class="lr submit" type="submit">Register</button>
+            </form>
+
+            <p class="bottomLink">Already Registered ? <a href="#" class="login-link">Login</a></p>
+          </div>
+    </div>
+
+    <!-- <button class="btn">button</button> -->
+
+    <div class="todo-app">
+        <h2>To-Do List <span>📝</span></h2>
+        <div class="input-row">
+          <input type="text" id="todo-input" placeholder="Add a new task..." />
+          <button id="add-btn">Add</button>
+        </div>
+        <ul id="todo-list"></ul>
+      </div>
+      
+
+    <script type="module" src="index.js"></script>
+</body>
+</html>
